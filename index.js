@@ -10,10 +10,14 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
+    console.log('Kullanıcı bağlandı!');
     socket.on('chat message', (msg) => {
         console.log('message: ' + msg);
         io.emit('chat message', msg);
     });
+    socket.on('disconnect', () => {
+        console.log('Kullanıcı bağlantısı sona erdi!')
+    })
 });
 
 server.listen(3000, () => {

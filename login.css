@@ -1,0 +1,24 @@
+span {
+    color: #dc3545 !important;
+    ;
+}
+
+
+#efe {
+    text-shadow: 1px 1px 4px #fff !important;
+}
+
+
+#efe span {
+    text-shadow: 1px 1px 4px #dc3545 !important;
+}
+
+body {
+
+    background: linear-gradient(90deg, #343a40 50%, #969595 50%);
+}
+
+.form-control:focus {
+    border-color: #fff !important;
+    box-shadow: none !important;
+}
